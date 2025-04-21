@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pu Maw Law Biography-Karen Version</title>
     <style>
-        @font-face {
-    font-family: 'KNU';
-    src: url('fonts/KNU.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
         body {
             font-family: KNU, sans-serif;
             margin: 10px;
@@ -21,85 +13,140 @@
             color: #000;
             font-size: 14px;
         }
-
+        
         .karen {
             text-align: left;
         }
-
+        
         .header-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
         }
-
-
+        
         img {
             width: 120px;
             height: auto;
             border-radius: 10%;
             flex-shrink: 0;
         }
-
+        
         h3,
         h4,
         p {
             margin: 0 0 10px 0;
         }
-
+        
         .poem {
             margin-left: 30px;
             white-space: pre-wrap;
             word-break: break-word;
         }
-
-        /* Responsive for small phones (under 350px width) */
+        
+        /* Base responsive container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            body {
+                font-size: 15px;
+                margin: 15px;
+            }
+            
+            img {
+                width: 100px;
+            }
+            
+            .poem {
+                margin-left: 20px;
+            }
+        }
+        
+        /* Large devices (laptops/desktops, 1024px and up) */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 16px;
+                margin: 20px;
+            }
+            
+            .container {
+                padding: 0 30px;
+            }
+            
+            img {
+                width: 150px;
+            }
+        }
+        
+        /* Responsive for small phones (under 360px width) */
         @media (max-width: 360px) {
             body {
                 font-size: 13px;
-
             }
-
+            
             .content-wrapper {
                 flex-direction: column;
                 text-align: left;
             }
-
+            
             img {
                 width: 90px;
                 height: auto;
-
             }
-
+            
             .poem {
                 margin-left: 0;
                 padding: 0 5px;
             }
-
+            
             h3,
             h4 {
                 font-size: 15px;
             }
-
+            
             p,
             .poem {
                 font-size: 13px;
-
             }
-
+            
             p {
                 text-align: justify;
                 justify-items: center;
             }
-
+            
             a {
                 font-size: 13px;
                 text-decoration: none;
             }
         }
+        
+        /* For phones between 361px and 767px */
+        @media (min-width: 361px) and (max-width: 767px) {
+            body {
+                font-size: 14px;
+                margin: 12px;
+            }
+            
+            .header-row {
+                flex-wrap: wrap;
+            }
+            
+            img {
+                width: 100px;
+            }
+            
+            .poem {
+                margin-left: 15px;
+            }
+        }
     </style>
 </head>
-
 <body>
     <h3 class="karen">zkrDvDto;orlt*h>zk.udm</h3>
     <a href="pumawlaw-eng.html">ဖးလၢကီၤလၤ၀ါကျိၥ်ဖဲအံၤ</a>
